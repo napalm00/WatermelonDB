@@ -120,6 +120,8 @@ export function take(count: number): Take
 
 export function skip(count: number): Skip
 
+export function ftsMatch(value: string): Comparison
+
 // Note: we have to write out three separate meanings of OnFunction because of a Babel bug
 // (it will remove the parentheses, changing the meaning of the flow type)
 type _OnFunctionColumnValue = (
