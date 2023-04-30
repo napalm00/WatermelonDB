@@ -230,9 +230,6 @@ export function ftsMatch(value: string): Comparison {
   return { operator: 'ftsMatch', right: { value }, type: comparisonSymbol }
 }
 
-
-export function ftsMatch(value: string): Comparison
-
 // Note: we have to write out three separate meanings of OnFunction because of a Babel bug
 // (it will remove the parentheses, changing the meaning of the flow type)
 type _OnFunctionColumnValue = (TableName<any>, ColumnName, Value) => On
